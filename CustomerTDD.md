@@ -80,6 +80,19 @@ Process Flow Alternative Approach
 
 The alternative to importing customers through this integration would be to create customer either through a CSV upload, or manually through the NetSuite UI. Both of these options have been determined to be too labor intensive by the Feast Kitchen team. 
 
+| No. |	NetSuite Field Name | NetSuite Field ID | NS Field Type | Fld Restriction | Kitchen Source Name | Kitchen Source Field ID |
+| --- | ------------------- | ----------------- | ------------- | --------------- | ------------------- | ----------------------- |
+| 1 | External ID | externalid | Alpha Numeric | Max Size 100 Chars | Customer ID | customerId |
+| 2 | Customer ID | entityId | Alpha Numeric  | Max Size 80 Chars | | |	 	 
+| 3 | Individual | isperson | Boolean | TRUE/FALSE | | |
+| 4 | First Name | firstname | String | Max Size 32 Chars | | |
+| 5 | Last Name | lastname | String | Max Size 32 Chars | | |
+| 6 | Company Name | companyname | Alpha Numeric | String- Max size 83 | | |
+| 7 | Status | status | List | List | | |
+| 8 | Subsidiary | subsidiary | List | List | | |
+| 9 | Address1_AddressName | Label | String | Sting Max Size 150 | | |
+| 10 | Primary Currency | currency | List | List | | |
+
 ## Test Case Scenarios
 | Test Case |	Test Scenario Description | Test Results |
 | --------- | -------------------------- | ------------ |
